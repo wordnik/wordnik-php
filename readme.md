@@ -1,5 +1,7 @@
-Wordnik API: PHP Client
-=======================
+Wordnik API: PHP Client (deprecated)
+====================================
+
+**Note: This library is outdated**
 
 This is the official PHP client library for the Wordnik API.
 
