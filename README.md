@@ -1,4 +1,4 @@
-Wordnik Python Client
+Wordnik PHP Client
 ==========
 This client has been generated using the Swagger code generator, which builds robust API clients and beautiful API documentation automatically. If you'd like to learn more about Swagger, visit http://swagger.wordnik.com/ (but you don't need to know anything about Swagger to simply use this API client for Wordnik, this page will tell get you up to speed on that account). 
 
