@@ -10,7 +10,7 @@ If you need help after reading the below, please find us on Google Groups at htt
 
 Place the `wordnik` folder that you downloaded somewhere where it can be accessed by your scripts. Create a connection as follows:
 
-```
+```php
 <?php
 require('./wordnik/Swagger.php');
 $myAPIKey = 'YOUR KEY GOES HERE';
@@ -24,7 +24,7 @@ You'll want to edit those first two lines to reflect the full or relative path t
 
 Once you have a client set up, you need to instantiate an API object for whichever category or categories of items you are interested in working with. For example, to work with the `word` API and apply the method `getTopExample` method, you can do the following:
 
-```
+```php
 <?php
 $wordAPI = new WordAPI($client);
 $example = $wordAPI->getTopExample('irony');
@@ -38,7 +38,7 @@ You can find out what fields to expect in the return value by using the interact
 
 Some methods, like `getDefinitions`, also take optional keyword parameters which should be specified by name. Again, these are shown in the online documentation and in the method defintions.
 
-```
+```php
 <?php
 $definitions = $wordAPI->getDefinitions('badger', $partOfSpeech='verb', $sourceDictionaries='wiktionary', $limit=1);
 ?>
