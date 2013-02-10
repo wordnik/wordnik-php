@@ -26,8 +26,8 @@ Once you have a client set up, you need to instantiate an API object for whichev
 
 ```php
 <?php
-$wordAPI = new WordAPI($client);
-$example = $wordAPI->getTopExample('irony');
+$wordApi = new WordApi($client);
+$example = $wordApi->getTopExample('irony');
 print $example->text;
 ?>
 ```
