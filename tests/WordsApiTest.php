@@ -23,6 +23,12 @@ class WordsApiTest extends BaseApiTest {
     $this->assertNotEquals(0, count($res->results));
   }
 
+  public function testReverseDictionaryWithSpaces() {
+    $res = $this->wordsApi->reverseDictionary('a person who heals');
+    $this->assertNotEquals(0, $res->totalResults);
+    $this->assertNotEquals(0, count($res->results));
+  }
+
   public function testGetRandomWords() {
     $res = $this->wordsApi->getRandomWords();
     $this->assertEquals(10, count($res));
