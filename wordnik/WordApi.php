@@ -300,16 +300,16 @@ class WordApi {
       $headerParams = array();
 
       if($useCanonical != null) {
-  		  $queryParams['useCanonical'] = $this->apiClient->toPathValue($useCanonical);
+  		  $queryParams['useCanonical'] = $this->apiClient->toQueryValue($useCanonical);
   		}
   		if($sourceDictionary != null) {
-  		  $queryParams['sourceDictionary'] = $this->apiClient->toPathValue($sourceDictionary);
+  		  $queryParams['sourceDictionary'] = $this->apiClient->toQueryValue($sourceDictionary);
   		}
   		if($typeFormat != null) {
-  		  $queryParams['typeFormat'] = $this->apiClient->toPathValue($typeFormat);
+  		  $queryParams['typeFormat'] = $this->apiClient->toQueryValue($typeFormat);
   		}
   		if($limit != null) {
-  		  $queryParams['limit'] = $this->apiClient->toPathValue($limit);
+  		  $queryParams['limit'] = $this->apiClient->toQueryValue($limit);
   		}
   		if($word != null) {
   			$resourcePath = str_replace("{" . "word" . "}",
@@ -353,13 +353,13 @@ class WordApi {
       $headerParams = array();
 
       if($useCanonical != null) {
-  		  $queryParams['useCanonical'] = $this->apiClient->toPathValue($useCanonical);
+  		  $queryParams['useCanonical'] = $this->apiClient->toQueryValue($useCanonical);
   		}
   		if($sourceDictionary != null) {
-  		  $queryParams['sourceDictionary'] = $this->apiClient->toPathValue($sourceDictionary);
+  		  $queryParams['sourceDictionary'] = $this->apiClient->toQueryValue($sourceDictionary);
   		}
   		if($limit != null) {
-  		  $queryParams['limit'] = $this->apiClient->toPathValue($limit);
+  		  $queryParams['limit'] = $this->apiClient->toQueryValue($limit);
   		}
   		if($word != null) {
   			$resourcePath = str_replace("{" . "word" . "}",
@@ -403,13 +403,13 @@ class WordApi {
       $headerParams = array();
 
       if($useCanonical != null) {
-  		  $queryParams['useCanonical'] = $this->apiClient->toPathValue($useCanonical);
+  		  $queryParams['useCanonical'] = $this->apiClient->toQueryValue($useCanonical);
   		}
   		if($startYear != null) {
-  		  $queryParams['startYear'] = $this->apiClient->toPathValue($startYear);
+  		  $queryParams['startYear'] = $this->apiClient->toQueryValue($startYear);
   		}
   		if($endYear != null) {
-  		  $queryParams['endYear'] = $this->apiClient->toPathValue($endYear);
+  		  $queryParams['endYear'] = $this->apiClient->toQueryValue($endYear);
   		}
   		if($word != null) {
   			$resourcePath = str_replace("{" . "word" . "}",
@@ -453,13 +453,13 @@ class WordApi {
       $headerParams = array();
 
       if($limit != null) {
-  		  $queryParams['limit'] = $this->apiClient->toPathValue($limit);
+  		  $queryParams['limit'] = $this->apiClient->toQueryValue($limit);
   		}
   		if($wlmi != null) {
-  		  $queryParams['wlmi'] = $this->apiClient->toPathValue($wlmi);
+  		  $queryParams['wlmi'] = $this->apiClient->toQueryValue($wlmi);
   		}
   		if($useCanonical != null) {
-  		  $queryParams['useCanonical'] = $this->apiClient->toPathValue($useCanonical);
+  		  $queryParams['useCanonical'] = $this->apiClient->toQueryValue($useCanonical);
   		}
   		if($word != null) {
   			$resourcePath = str_replace("{" . "word" . "}",
@@ -501,7 +501,7 @@ class WordApi {
       $headerParams = array();
 
       if($useCanonical != null) {
-  		  $queryParams['useCanonical'] = $this->apiClient->toPathValue($useCanonical);
+  		  $queryParams['useCanonical'] = $this->apiClient->toQueryValue($useCanonical);
   		}
   		if($word != null) {
   			$resourcePath = str_replace("{" . "word" . "}",
@@ -544,10 +544,10 @@ class WordApi {
       $headerParams = array();
 
       if($useCanonical != null) {
-  		  $queryParams['useCanonical'] = $this->apiClient->toPathValue($useCanonical);
+  		  $queryParams['useCanonical'] = $this->apiClient->toQueryValue($useCanonical);
   		}
   		if($limit != null) {
-  		  $queryParams['limit'] = $this->apiClient->toPathValue($limit);
+  		  $queryParams['limit'] = $this->apiClient->toQueryValue($limit);
   		}
   		if($word != null) {
   			$resourcePath = str_replace("{" . "word" . "}",
@@ -609,6 +609,6 @@ class WordApi {
   		return $responseObject;
 
       }
-  
+
 }
 

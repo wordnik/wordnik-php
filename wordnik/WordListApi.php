@@ -31,7 +31,7 @@ class WordListApi {
    * permalink, string: permalink of WordList to update (required)
    * body, WordList: Updated WordList (optional)
    * auth_token, string: The auth token of the logged-in user, obtained by calling /account.{format}/authenticate/{username} (described above) (required)
-   * @return 
+   * @return
 	 */
 
    public function updateWordList($permalink, $body=null, $auth_token) {
@@ -44,7 +44,7 @@ class WordListApi {
       $headerParams = array();
 
       if($auth_token != null) {
-  		 	$headerParams['auth_token'] = $this->apiClient->toPathValue($auth_token);
+  		 	$headerParams['auth_token'] = $this->apiClient->toHeaderValue($auth_token);
   		}
       if($permalink != null) {
   			$resourcePath = str_replace("{" . "permalink" . "}",
@@ -65,7 +65,7 @@ class WordListApi {
 	 * Deletes an existing WordList
    * permalink, string: ID of WordList to delete (required)
    * auth_token, string: The auth token of the logged-in user, obtained by calling /account.{format}/authenticate/{username} (described above) (required)
-   * @return 
+   * @return
 	 */
 
    public function deleteWordList($permalink, $auth_token) {
@@ -78,7 +78,7 @@ class WordListApi {
       $headerParams = array();
 
       if($auth_token != null) {
-  		 	$headerParams['auth_token'] = $this->apiClient->toPathValue($auth_token);
+  		 	$headerParams['auth_token'] = $this->apiClient->toHeaderValue($auth_token);
   		}
       if($permalink != null) {
   			$resourcePath = str_replace("{" . "permalink" . "}",
@@ -112,7 +112,7 @@ class WordListApi {
       $headerParams = array();
 
       if($auth_token != null) {
-  		 	$headerParams['auth_token'] = $this->apiClient->toPathValue($auth_token);
+  		 	$headerParams['auth_token'] = $this->apiClient->toHeaderValue($auth_token);
   		}
       if($permalink != null) {
   			$resourcePath = str_replace("{" . "permalink" . "}",
@@ -142,7 +142,7 @@ class WordListApi {
    * permalink, string: permalink of WordList to user (required)
    * body, array[StringValue]: Array of words to add to WordList (optional)
    * auth_token, string: The auth token of the logged-in user, obtained by calling /account.{format}/authenticate/{username} (described above) (required)
-   * @return 
+   * @return
 	 */
 
    public function addWordsToWordList($permalink, $body=null, $auth_token) {
@@ -155,7 +155,7 @@ class WordListApi {
       $headerParams = array();
 
       if($auth_token != null) {
-  		 	$headerParams['auth_token'] = $this->apiClient->toPathValue($auth_token);
+  		 	$headerParams['auth_token'] = $this->apiClient->toHeaderValue($auth_token);
   		}
       if($permalink != null) {
   			$resourcePath = str_replace("{" . "permalink" . "}",
@@ -193,19 +193,19 @@ class WordListApi {
       $headerParams = array();
 
       if($sortBy != null) {
-  		  $queryParams['sortBy'] = $this->apiClient->toPathValue($sortBy);
+  		  $queryParams['sortBy'] = $this->apiClient->toQueryValue($sortBy);
   		}
   		if($sortOrder != null) {
-  		  $queryParams['sortOrder'] = $this->apiClient->toPathValue($sortOrder);
+  		  $queryParams['sortOrder'] = $this->apiClient->toQueryValue($sortOrder);
   		}
   		if($skip != null) {
-  		  $queryParams['skip'] = $this->apiClient->toPathValue($skip);
+  		  $queryParams['skip'] = $this->apiClient->toQueryValue($skip);
   		}
   		if($limit != null) {
-  		  $queryParams['limit'] = $this->apiClient->toPathValue($limit);
+  		  $queryParams['limit'] = $this->apiClient->toQueryValue($limit);
   		}
   		if($auth_token != null) {
-  		 	$headerParams['auth_token'] = $this->apiClient->toPathValue($auth_token);
+  		 	$headerParams['auth_token'] = $this->apiClient->toHeaderValue($auth_token);
   		}
       if($permalink != null) {
   			$resourcePath = str_replace("{" . "permalink" . "}",
@@ -235,7 +235,7 @@ class WordListApi {
    * permalink, string: permalink of WordList to use (required)
    * body, array[StringValue]: Words to remove from WordList (optional)
    * auth_token, string: The auth token of the logged-in user, obtained by calling /account.{format}/authenticate/{username} (described above) (required)
-   * @return 
+   * @return
 	 */
 
    public function deleteWordsFromWordList($permalink, $body=null, $auth_token) {
@@ -248,7 +248,7 @@ class WordListApi {
       $headerParams = array();
 
       if($auth_token != null) {
-  		 	$headerParams['auth_token'] = $this->apiClient->toPathValue($auth_token);
+  		 	$headerParams['auth_token'] = $this->apiClient->toHeaderValue($auth_token);
   		}
       if($permalink != null) {
   			$resourcePath = str_replace("{" . "permalink" . "}",
@@ -264,6 +264,6 @@ class WordListApi {
 
 
       }
-  
+
 }
 
