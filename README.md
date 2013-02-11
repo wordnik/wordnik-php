@@ -36,11 +36,20 @@ To find out what arguments the method expects, consult the online, interactive d
 
 You can find out what fields to expect in the return value by using the interactive docs. You can also check out the tests in the `tests/` folder in this repository; each method is shown and tested there. In this case, the documentation in `WordAPI.php` shows that `getTopExample` returns an instance of `Example`, so you would examine that class in `wordnik/model/Example.php`.
 
-Some methods, like `getDefinitions`, also take optional keyword parameters which should be specified by name. Again, these are shown in the online documentation and in the method defintions.
+Some methods, like `getDefinitions`, also take optional parameters which can be omitted. However, if you want to specify one optional parameter, you have to specify all of the previous mandatory and optional parameters in the function definition. If you don't want to give any value for a parameter, you can put `null`. Again, these are shown in the online documentation and in the method defintions.
 
 ```php
 <?php
 $definitions = $wordAPI->getDefinitions('badger', $partOfSpeech='verb', $sourceDictionaries='wiktionary', $limit=1);
+?>
+```
+
+If you only want to specify the limit, you can usee `null` for the preceding values. You can include the names of the arguments if you like, but you don't have to.
+
+```php
+<?php
+$definitions = $wordAPI->getDefinitions('badger', $partOfSpeech=null, $sourceDictionaries=null, $limit=1);
+$definitions = $wordAPI->getDefinitions('badger', null, null, 1);
 ?>
 ```
 
