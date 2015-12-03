@@ -40,7 +40,7 @@ Some methods, like `getDefinitions`, also take optional parameters which can be 
 
 ```php
 <?php
-$definitions = $wordAPI->getDefinitions('badger', $partOfSpeech='verb', $sourceDictionaries='wiktionary', $limit=1);
+$definitions = $wordApi->getDefinitions('badger', $partOfSpeech='verb', $sourceDictionaries='wiktionary', $limit=1);
 ?>
 ```
 
@@ -48,8 +48,8 @@ If you only want to specify the limit, you can usee `null` for the preceding val
 
 ```php
 <?php
-$definitions = $wordAPI->getDefinitions('badger', $partOfSpeech=null, $sourceDictionaries=null, $limit=1);
-$definitions = $wordAPI->getDefinitions('badger', null, null, 1);
+$definitions = $wordApi->getDefinitions('badger', $partOfSpeech=null, $sourceDictionaries=null, $limit=1);
+$definitions = $wordApi->getDefinitions('badger', null, null, 1);
 ?>
 ```
 
